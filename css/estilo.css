@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Special+Elite&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-size: 100% 100%;
+    font-family: Arial, sans-serif;
+    height: 100%;
+    background-repeat: no-repeat;
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
+header{
+    position: relative;
+    font-family: 'Righteous', cursive;
+    text-align: center;
+    margin: auto;
+    font-size: 50px;
+    height: 25vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(185, 185, 185);
+}
+@media (min-width: 300px){
+    header {
+        font-size: 20px;
+    }
+}
+@media (min-width: 600px){
+    header {
+        font-size: 24px;
+    }   
+}
+@media (min-width: 1000px){
+    header {
+        font-size: 30px;
+    }   
+}
+@media (min-width: 1200px){
+    header {
+        font-size: 38px;
+    }   
+}
+header img{
+    width: 100px;
+    height: 100px;
+}
+div#res{
+    color: tomato;
+}
+
+.menu{
+    background-color: none; 
+    position: fixed;
+    width: 100vw;
+    top: 0;
+}
+  
+.menu ul{
+    display: flex;
+    justify-content: space-around;
+}
+  
+.menu li{
+    list-style: none;
+    font-family: 'Anton', sans-serif;
+}
+  
+.menu a{
+    display: block;
+    padding: 10px 20px;
+    color: rgb(255, 255, 255);
+}
+
+.menu a:hover{
+    background-color: rgba(70, 70, 70, 0.842);
+    transition: background-color 2s;
+}
+a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+section .numeros #tx1{
+    height: 30px;
+    text-align: center;
+    border-radius: 10px;
+    color: black;
+    margin: 15px 15px;
+
+}
+section .numeros #tx2{
+    height: 30px;
+    text-align: center;
+    border-radius: 10px;
+    color: black;
+    margin: 15px 15px;
+}
+section .numeros #tx3{
+    height: 30px;
+    width: 90px;
+    text-align: center;
+    border-radius: 10px;
+    color: black;
+    margin: 15px 15px;
+}
+div #botao{
+    position: relative;
+    height: 40px;
+    width: 150px;
+    margin: 15px 15px;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    color: white;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-size: 20px;
+    font-family: 'Fredoka One', cursive;
+    background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+    background-size: 400%;
+    z-index: 1;
+    animation: glow 8s linear infinite;
+}
+
+@keyframes glow{
+    0%{
+        background-position: 0%;
+    }
+    100%{
+        background-position: 100%;
+    }
+}
+footer{
+    position: relative;
+    clear: both;
+    text-align: center;
+    border-top: 400px solid black;
+
+}
+@media (min-width: 300px){
+    footer {
+        border-top: 150px solid black;
+    }   
+}
+@media (min-width: 800px){
+    footer {
+        border-top: 300px solid black;
+    }   
+}
+@media (min-width: 1200px){
+    footer {
+        border-top: 450px solid black;
+    }   
+}

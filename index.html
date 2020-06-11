@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilo.css">
+    <title>Sorteador</title>
+</head>
+<body>
+    <nav class="menu">
+        <ul>
+            <li><a href="#titulo">Inicio</a></li>
+            <li><a href="#informacao">Perfil</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+    </nav>
+    <header>
+        <h1>Sortear</h1>
+        <img class="img-sorte" src="./img/sorte.png" alt="sorte">
+    </header>
+    <section>   
+        <div class="numeros">
+           <h3>Entre
+            <input type="number" name="ini" id="tx1"> e <input type="number" name="fin" id="tx2">
+           </h3>
+            <p>Quantidade de numeros sorteados
+                <input type="number" name="quant" id="tx3">
+            </p>
+        </div>
+            <div>
+            
+                <input type="button" value="sortear" onclick="sortear()" id="botao">
+            
+            </div>
+        
+        <div id="res">
+          <h2>Sorteando...</h2> 
+        </div>
+    </section>
+    <footer class="rodape">    
+        <p>&copy; Lucas Silva Azevedo </p>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
